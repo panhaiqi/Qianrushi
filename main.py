@@ -11,6 +11,6 @@ poem_num = load_poem(predict_result)
 music_path = base_path + 'music' + '\\'+ str(predict_result)+'\\'+str(poem_num)+'.mp3'
 synthesis_path = base_path + 'synthesis' + '\\'+ str(predict_result)+'\\'+str(poem_num)+'.mp3'
 gcode_path = base_path + 'gcode' + '\\'+ str(predict_result) +'\\'+ str(poem_num) + '.txt'
-load_music(music_path)
-load_music(synthesis_path)
+load_music(music_path,synthesis_path)
+#load_music(synthesis_path)
 send_gcode(gcode_path)
