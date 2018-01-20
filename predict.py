@@ -11,7 +11,7 @@ def predict(argv):
     data.append(img_as_ubyte(transform.resize(argv, (224,224,3))))
 
 
-    model = load_model('mobilenet.hdf5',custom_objects={
+    model = load_model('mobilenet_add.hdf5',custom_objects={
                   'relu6': relu6,
                   'DepthwiseConv2D': DepthwiseConv2D})
 
