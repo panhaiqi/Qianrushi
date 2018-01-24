@@ -9,6 +9,7 @@ import numpy as np
 from skimage import color
 
 def predict(img):
+    lst = ['鸟', '荷', '竹', '马', '菊', '兰', '柳', '梅', '山']
     data = []
     #img = color.gray2rgb(argv)
     #data = []
@@ -26,6 +27,6 @@ def predict(img):
                   'DepthwiseConv2D': DepthwiseConv2D})
 
     predict_list = model.predict(data)
-
+    print(lst[np.argmax(predict_list)].encode('utf-8').decode('utf-8'))
     return np.argmax(predict_list)
 
