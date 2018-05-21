@@ -1,4 +1,4 @@
-from predict import predict
+# from predict import predict
 from load_poem import load_poem
 from load_music import load_music
 from send_gcode import send_gcode
@@ -7,16 +7,23 @@ from skimage import io
 from load import load
 from image_process import image_process
 import numpy as np
+import datetime
+# from keras.utils import plot_model
+
 # import datetime
 base_path = r'..\\Qianrushi\\'
 model = load()
+# print(model.summary())
+# plot_model(model, to_file='model.png')
+
 while (1):
     img = input()
-
+    starttime = datetime.datetime.now()
     data = image_process(img)
 
     predict_result = np.argmax(model.predict(data))
-
+    endtime = datetime.datetime.now()
+    print (endtime - starttime)
     poem_num = load_poem(predict_result)
     music_path = base_path + 'music' + '\\' + str(predict_result) + '\\' + str(poem_num) + '.ogg'
     synthesis_path = base_path + 'synthesis' + '\\' + str(predict_result) + '\\' + str(poem_num) + '.wav'
