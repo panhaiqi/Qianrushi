@@ -17,5 +17,9 @@
 ## 2018.5.1后
 ### 移植到up squared
 
- 换python3.6，装3.5会迷之openssl编译出问题所以所有需要发送https请求的第三方库都装不了。。原因暂时不明，选择换3.6
+ 
+
+- 测试换python3.6(anaconda3_5.1.0)，up squared上装3.5会迷之openssl编译出问题所以所有需要发送https请求的第三方库都装不了。。原因暂时不明，选择换3.6
+- up squared上只能装在这个链接里下的[tensorflow](https://github.com/fo40225/tensorflow-windows-wheel)
+- 服务器上训练的环境是anaconda3_4.2.0+tensorflow_gpu_1.4.1+cuda8.0+cudnn8.0，和上一条一样都忘了配置的时候具体报过什么错了反正都搞了几天。。。
 
