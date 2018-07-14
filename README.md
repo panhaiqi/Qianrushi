@@ -1,5 +1,7 @@
 # Qianrushi
-- lst = ['鸟','荷','竹','马','菊','兰','柳','梅','山']
+<code>
+lst = ['鸟','荷','竹','马','菊','兰','柳','梅','山']
+</code><br>
 - 鸟 0:天净沙·秋思 1:滁州西涧 2：画眉鸟
 - 荷 0：晓出净慈寺送林子方 1：雨后池上 2：采桑子·荷花开后
 - 竹 0：题画竹 1：竹里 2：题吾友梁铁君侠者画竹
@@ -20,6 +22,14 @@
  
 
 - 测试换python3.6(anaconda3_5.1.0)，up squared上装3.5会迷之openssl编译出问题所以所有需要发送https请求的第三方库都装不了。。原因暂时不明，选择换3.6
-- up squared上只能装在这个链接里下的[tensorflow](https://github.com/fo40225/tensorflow-windows-wheel)
-- 服务器上训练的环境是anaconda3_4.2.0+tensorflow_gpu_1.4.1+cuda8.0+cudnn8.0，和上一条一样都忘了配置的时候具体报过什么错了反正都搞了几天。。。
+- up squared上只能装在这个链接里下的[tensorflow](https://github.com/fo40225/tensorflow-windows-wheel/tree/master/1.6.0/py36/CPU/sse2),
+- 服务器上训练的环境是anaconda3\_4.2.0+tensorflow\_gpu_1.4.1+cuda8.0+cudnn8.0，和上一条一样都忘了配置的时候具体报过什么错了反正都搞了几天。。。
+- 重新导g代码，五言字体高度50，落笔深度3，从右往左写空4格，2格，靠边；七言字体高度38，落笔深度3，从右往左写空4格，2格，靠边
+- “南“，”露“,"凌"
+- 山居秋暝 导出来的字有点怪
+- 编码更改
+<code>lst = [ 'he', 'zhu', 'moon', 'ju', 'lan', 'liu', 'mei', 'mountain']</code>
 
+----------
+# 2018.7.14 #
+应该从西部出线能去国决了，评审过程系统装win10评委怀疑我们换了cpu也是没谁了，搞得非常难受的驱动一点都没被问到，大概作品难易程度那里扣的比较多
