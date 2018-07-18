@@ -6,7 +6,7 @@ from tensorflow.python.keras._impl.keras.applications.mobilenet import relu6,Dep
 # import datetime
 # starttime = datetime.datetime.now()
 def load():
-    model = load_model('mobilenet_final.hdf5',custom_objects={
+    model = load_model('mobilenet.hdf5',custom_objects={
                   'relu6': relu6,
         'DepthwiseConv2D': DepthwiseConv2D})
     return model
